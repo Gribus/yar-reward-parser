@@ -9,7 +9,8 @@
   },
   "pkg": {
     "assets": [
-      "node_modules/**/*",
+      "node_modules/.prisma/**/*",
+      "node_modules/@prisma/**/*",
       "prisma/*",
       "crates.json"
     ],
