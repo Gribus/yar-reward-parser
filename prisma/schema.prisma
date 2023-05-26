@@ -1,0 +1,24 @@
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "windows"]
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model migrations {
+  id          Int       @id @default(autoincrement())
+  name        String?
+  executed_at DateTime? @default(now())
+}
+
+model rewards {
+  id         Int      @id @default(autoincrement())
+  item_id    String
+  client_id  String
+  steam_id   String
+  created_at DateTime
+  updated_at DateTime
+}
