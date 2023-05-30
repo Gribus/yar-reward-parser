@@ -25,6 +25,9 @@
     "prisma": "^4.14.1"
   },
   "dependencies": {
-    "@prisma/client": "^4.14.1"
+    "@prisma/client": "^4.14.1",
+    "@types/papaparse": "^5.3.7",
+    "papaparse": "^5.4.1",
+    "remeda": "^1.19.0"
   }
 }
